@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/exampleText"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/exampleText"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/exampleText"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnswer0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:onClick="onClickAnswer"
+        android:padding="@dimen/paddingInsideTextView"
+        android:text="@string/exampleText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeAnswers"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAnswer1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnswer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:onClick="onClickAnswer"
+        android:padding="@dimen/paddingInsideTextView"
+        android:text="@string/exampleText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeAnswers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAnswer3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnswer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:onClick="onClickAnswer"
+        android:padding="@dimen/paddingInsideTextView"
+        android:text="@string/exampleText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeAnswers"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAnswer0" />
+
+    <TextView
+        android:id="@+id/textViewAnswer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:onClick="onClickAnswer"
+        android:padding="@dimen/paddingInsideTextView"
+        android:text="@string/exampleText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeAnswers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAnswer2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

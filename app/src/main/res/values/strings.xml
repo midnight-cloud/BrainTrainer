@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BrainTrainer</string>
+    <string name="exampleText">Example</string>
+    <string name="new_game">New game</string>
+    <string name="appName">Brain Trainer</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_settings">settings</string>
+    <string name="settings">Settings</string>
+    <string name="range_of_numbers">Range of numbers</string>
+    <string name="min_value">min value</string>
+    <string name="max_value">max value</string>
+    <string name="_5">5</string>
+    <string name="_30">30</string>
+    <string name="back">Back</string>
+    <string name="game_over">Game over</string>
+    <string name="reset">reset</string>
+    <string name="copyright">created by @ivanoff_evg</string>
+    <string name="app_version">version 0.5.1 beta</string>
+</resources>
